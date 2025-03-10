@@ -51,7 +51,7 @@ export class EcsStack extends cdk.Stack {
             // https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#task_size
             cpu: 256, // 256 (0.25 vCPU) to 16384 (16 vCPU).
             memoryLimitMiB: 512, /* 512 (0.5 GB) to 122880 (120 GB). Higher memory limits are supported only when higher vCPU count is used. */
-            ephemeralStorageGiB: 20, // 20 to 200GB
+            ephemeralStorageGiB: 21, // 21 to 200GB (20GB is the default, when this is specified, cdk expects at least 21GB)
             runtimePlatform: {
                 cpuArchitecture: ecs.CpuArchitecture.ARM64,
                 operatingSystemFamily: ecs.OperatingSystemFamily.LINUX,

@@ -7,6 +7,7 @@
 To build and deploy the cdk stack, use
 
 ```bash
+# From within the cdk directory
 npx cdk deploy --require-approval never
 ```
 
@@ -24,6 +25,7 @@ cdk bootstrap
 ## Deploy and destroy the stack
 
 ```bash
+# From within the cdk directory
 # Deploy
 npx cdk deploy --require-approval never
 # Destroy the cdk stack
